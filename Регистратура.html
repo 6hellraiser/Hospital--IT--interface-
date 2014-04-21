@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Registratura</title>
+		<link rel="stylesheet" media="screen" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/default.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/list.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/status.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/feedlist.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/metro.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/login.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/wrap.css">
+		
+		<script src="javascripts/bootstrap.min.js" type="text/javascript" charset="${_response_encoding}"></script>
+		
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body {
+				padding-top: 40px;
+				padding-bottom: 40px;
+			  }
+
+			  .form-signup {
+				max-width: 500px;
+				padding: 19px 29px 29px;
+				margin: 0 auto 20px;
+				background-color: #D8BFD8;
+				border: 1px solid #e5e5e5;
+				-webkit-border-radius: 10px;
+				   -moz-border-radius: 10px;
+						border-radius: 10px;
+				-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+				   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+						box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			  }
+
+			  
+			  .form-signup .form-signup-heading
+			  {
+				margin-bottom: 10px;
+				text-align: center;
+			  }
+			 
+			  .name_container,
+			  .password_container,
+			  .type_container,
+			  .department_container,
+			  .room_container,
+			  .doctor_container
+ 			  {
+				font-size: 16px;
+				margin-bottom: 5px;
+				margin-right: 20%;
+				padding: 2px 5px;
+		      }
+			  .form-signup button[type="submit"] {
+				background-color: #BA55D3;
+			  }
+		</style>
+	</head>
+	<body>
+	<div class="container" >
+
+      <form class="form-signup" align="right">
+		<div class = "name_container">
+		<p> Name
+        <input type="text" class="input-block-level" placeholder="Name" style="width: 200px; height: 35px"> </p> </div>
+		<div class = "password_container">
+		<p> Password
+        <input type="password" class="input-block-level" placeholder="Password" style="width: 200px; height: 35px"></p> </div>
+		<div class = "type_container">
+		<p> Type
+        <select type="roles" style="width: 200px; height: 35px">
+			<option value="patient">Пациент</option>
+			<option value="doctor">Врач</option>
+			<option value="nurse">Медсестра</option>
+			<option value="nurse">Регистратура</option>
+		</select></p> </div>
+		<div class = "department_container">
+			<p> Department
+				<select name="departments" style="width: 200px; height: 35px">
+					<option value="surge">Хирургия</option>
+				</select>
+			</p> 
+		</div>
+		<div class = "room_container">
+		<p> Room
+        <input type="room" class="input-block-level" placeholder="Room" style="width: 200px; height: 35px"></p> </div>
+		<div class = "doctor_container">
+		<p> Doctor
+        <select name="doctors" style="width: 200px; height: 35px">
+			<option value="1">Кашкин</option>
+		</select></p> </div>
+		<button class="btn btn-large" type="submit">Sign up</button>
+      </form>
+
+    </div> 
+	</body>
+</html>

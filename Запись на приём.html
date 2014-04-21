@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reception</title>
+		<link rel="stylesheet" media="screen" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/default.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/list.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/status.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/feedlist.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/metro.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/login.css">
+        <link rel="stylesheet" media="screen" href="stylesheets/wrap.css">
+		
+		<script src="javascripts/bootstrap.min.js" type="text/javascript" charset="${_response_encoding}"></script>
+		
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body {
+				padding-top: 40px;
+				padding-bottom: 40px;
+				background: url(background.jpg);
+			  }
+			  
+			  .container {
+				background-color:  rgba(105,105,105,0.6	);
+				width: 100%;
+			  }
+
+			  .form-signup {
+				padding: 19px 29px 29px;
+			  }
+
+			  
+			  .form-signup .form-signup-heading
+			  {
+				margin-bottom: 10px;
+				text-align: center;
+			  }
+			 
+			  .type_container,
+			  .time_container,
+			  .date_container,
+			  .doctor_container
+ 			  {
+				font-size: 16px;
+				margin-bottom: 5px;
+				margin-right: 35%;
+				padding: 2px 5px;
+		      }
+			  .form-signup button[type="submit"] {
+				background-color: #708090;
+			  }
+		</style>
+	</head>
+	<body>
+	<div class="container" >
+
+      <form class="form-signup"  align="right">
+	  <h3 class="form-signup-heading">Запись на приём</h3>
+	  <div class = "type_container">
+		<p> Пациент
+        <select type="roles" style="width: 300px; height: 35px">
+			<option value="patient">Пациент</option>
+		</select></p> </div>
+		<div class = "doctor_container">
+		<p> Врач
+        <select name="doctors" style="width: 300px; height: 35px">
+			<option value="1">Кашкин</option>
+		</select></p> </div>
+		<div class = "date_container">
+		<p> Дата
+        <input <input type="date" style="width: 300px; height: 35px"> </p> </div>
+		<div class = "time_container">
+		<p> Время
+        <select type="time" style="width: 300px; height: 35px"> </select></p> </div>
+		<button class="btn btn-large" type="submit" style="width: 200px; height: 35px; margin-right: 40.5%;">Записаться</button>
+      </form>
+
+    </div> 
+	</body>
+</html>
