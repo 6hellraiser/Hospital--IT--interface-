@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Сохранение анализа</title>
@@ -18,20 +19,16 @@
 			body {
 				padding-top: 40px;
 				padding-bottom: 40px;
+				background: url(background.jpg);
+			  }
+			  
+			  .container {
+				background-color:  rgba(105,105,105,0.6	);
+				width: 100%;
 			  }
 
 			  .form-signup {
-				max-width: 500px;
 				padding: 19px 29px 29px;
-				margin: 0 auto 20px;
-				background-color: #D8BFD8;
-				border: 1px solid #e5e5e5;
-				-webkit-border-radius: 10px;
-				   -moz-border-radius: 10px;
-						border-radius: 10px;
-				-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-				   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-						box-shadow: 0 1px 2px rgba(0,0,0,.05);
 			  }
 
 			  
@@ -42,44 +39,39 @@
 			  }
 			 
 			  .type_container,
+			  .time_container,
 			  .date_container,
-			  .password_container
+			  .doctor_container
  			  {
 				font-size: 16px;
 				margin-bottom: 5px;
-				margin-right: 20%;
+				margin-right: 35%;
 				padding: 2px 5px;
 		      }
 			  .form-signup button[type="submit"] {
-				background-color: #BA55D3;
+				background-color: #708090;
 			  }
 		</style>
 	</head>
 	<body>
 	<div class="container" >
 
-      <form class="form-signup" align="right">
-        <h2 class="form-signup-heading">Сохранение</h2>
-		
-		<div class = "type_container">
+      <form class="form-signup"  align="right">
+	  <h3 class="form-signup-heading">Сохранение анализа</h3>
+	  <div class = "type_container">
 		<p> Пациент
-        <select type="roles" style="width: 200px; height: 35px">
-			<option value="patient">Стадная</option>
+        <select type="roles" style="width: 300px; height: 35px">
+			<option value="patient">Пациент</option>
 		</select></p> </div>
 		
 		<div class = "date_container">
 		<p> Дата
-        <select type="roles" style="width: 200px; height: 35px">
-			<option value="patient">1.04.2014</option>
-		</select></p> </div>
+        <input type="date" style="width: 300px; height: 35px"> </p> </div>
 		
-		<div class = "password_container">
+		<div class = "time_container">
 		<p> Результат
-        <input type="password" class="input-block-level" placeholder="Result" style="width: 200px; height: 35px"></p> </div>
-		
-			<button class="btn btn-large" type="submit">ОК</button>
-		</div>
-		
+        <input style="width: 300px; height: 35px"></p> </div>
+		<button class="btn btn-large" type="submit" style="width: 200px; height: 35px; margin-right: 40.5%;">Ok</button>
       </form>
 
     </div> 
